@@ -10,7 +10,7 @@ app.use(express.json())
 app.use(express.static(path.join(__dirname, "client/build")))
 
 app.use("/api/", (_, res) =>{
-    res.json({data:"API is accounted for"})
+    res.json({data:"this is cool to deply"})
 })
 app.listen(port, () =>{
     console.log(`Server is listening on port ${port}`)
